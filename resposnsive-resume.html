@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposive Resume</title>
+    <style>
+        *{
+        font-family: sans-serif;
+        }
+        .main-content{
+            display: grid;
+            grid-template-columns: 300px 700px;
+            min-height: 1000px;
+        }
+        .left-section{
+            max-width: 300px;
+            background-color: black;
+        }
+
+        .right-section{
+            width: 90%;
+            background-color: lightsalmon
+        }
+
+        .left-content{
+            padding: 1rem;
+        }
+
+        .profile-image{
+            margin: auto;
+            border: 5px solid white;
+            border-radius: 30%;
+            width: 60%;
+
+        }
+
+        img{
+            border-radius: 30%;
+            width: 100%;
+        }
+
+        .name{
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.02px;
+            text-transform: uppercase;
+            padding: 0.8rem;
+            color: white;    
+        }
+
+        .designation{
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+            color: lightgrey;
+        }
+
+        .description{
+            color: whitesmoke;
+            text-align: center;
+            padding: 1rem 0rem;
+            
+        }
+
+        .icon{
+            color: white;
+            padding: 1rem;
+        
+        }
+
+        .contact-item{
+            text-align: center;
+        }
+        .skills{
+            color: lightcoral;
+            text-align: center;
+            
+        }
+
+
+        .progress-bar{
+            
+            border: 1px solid white;
+            height: 4px;
+        }
+
+        .skill-name{
+            font-size: 0.65rem;
+            font-weight: 0.65rem;
+            text-align: left;
+            padding-bottom: 0.5rem;
+            color: white;
+        }
+
+        .right-section{
+            padding:2rem 3rem; 
+        }
+
+        .right-title{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width:674px){
+            .main-content{
+                grid-template-columns: repeat(1,1fr);
+                min-height: 1000px;
+                width: 90%;
+            }
+            .left-section{
+                width:1000px;
+            }
+            
+        }
+        
+    </style>
+
+</head>
+<body>
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content"> 
+                <div class="profile-details">
+                 <div class="profile-image">
+                    <img src="./DSC_2562~2-01.jpeg">
+                
+                 </div>
+                 <h1 class="name">Akash Meher</h1>
+                 <p class="designation">Full Stack Developer</p>
+                 <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere iusto, minus ea eaque ratione autem dolores temporibus, sapiente nihil vero numquam accusantium ducimus exercitationem nobis similique odio quod perferendis in?</p>
+                 <div class="contact-item">
+                <a href="https://www.linkedin.com/in/akash-meher/"><i class="fab fa-linkedin-in icon"></i></a>
+                <a href="https://github.com/akashmeherofficial"><i class="fab fa-github icon"></i></a>
+                <i class="fas fa-phone icon"></i>
+                <i class="fas fa-location-arrow icon"></i>
+                 </div>
+
+                 <h1 class="skills">SKILLS </h1>
+                 <ul>
+                     <li><h2 class="skill-name">HTML</h2><progress class="progress-bar" value="85" max="100"></progress></li>
+                     <li><h2 class="skill-name">CSS</h2><progress class="progress-bar" value="70" max="100"></progress></li>
+                     <li><h2 class="skill-name">JavaScript</h2><progress class="progress-bar" value="20" max="100"></progress></li>
+
+                 </ul>
+
+                </div>   
+            </div>
+        </section>
+        <section class="right-section">
+          <div class="right-main-section">
+            <h1 class="right-title">ABOUT ME</h1>
+            <h1 class="right-title">Education</h1>
+            <h1 class="right-title">Experience</h1>
+          </div>  
+        </section>
+    </main>
+   
+    <script src="https://kit.fontawesome.com/a0ebab569e.js" crossorigin="anonymous" defer></script>
+</body>
+</html>
